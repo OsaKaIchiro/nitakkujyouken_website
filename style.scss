@@ -1,0 +1,22 @@
+#sections{
+    .carousel{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        //ここから見た目
+        background-color: white;
+    }
+    .carousel-item{
+        scroll-snap-align: start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        //ここから見た目
+        width: 350px;
+        height: 500px;
+        background-color: yellow;
+        border-radius: 20px;
+    }
+}
