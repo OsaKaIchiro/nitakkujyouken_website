@@ -1,3 +1,4 @@
+
 #sections{
     .carousel{
         display: flex;
@@ -18,5 +19,22 @@
         height: 500px;
         background-color: yellow;
         border-radius: 20px;
+        margin: 10px;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+#news {}
+
