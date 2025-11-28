@@ -5,8 +5,26 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        //ここから見た目
-        background-color: white;
+        scroll-snap-stop: always;
+        //ボタン
+        &::scroll-button(left) {
+        content: "◀" / "Scroll Left";
+        justify-self: end;
+        margin-left: 30%;
+        width: 50px;height: 50px;
+        border: none;
+        border-radius: 100%;
+        padding-top: 10px;
+    }
+        &::scroll-button(right) {
+        content: "▶" / "Scroll Right";
+        margin-left: 55%;
+        width: 50px;height: 50px;
+        border: none;
+        border-radius: 100%;
+        padding-top: 10px;
+    }
+        
     }
     .carousel-item{
         scroll-snap-align: start;
@@ -15,11 +33,15 @@
         justify-content: center;
         flex: none;
         //ここから見た目
-        width: 350px;
-        height: 500px;
+        width: 400px;
+        height: 600px;
         background-color: yellow;
         border-radius: 20px;
-        margin: 10px;
+        margin-right: 10px;
+        scroll-snap-align: center;
+    }
+    .carousel::-webkit-scrollbar {
+    display: none;
     }
 }
 
