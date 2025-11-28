@@ -20,9 +20,29 @@
         </div>
     </section>
     <section id="form">
-        <h1>フォーム</h1>
+        <div class="form-title">
+            <h1>フォーム</h1>
+        </div>
+        <hr>
+        <div class="form-content">
+            <div class="form-name">
+                <label for="name">名前</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="名前">
+            </div>
+            <div class="form-email">
+                <label for="email">メールアドレス</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="メールアドレス">
+            </div>
+            <div class="form-opinion">
+                <label for="word">ご意見</label>
+                <textarea type="text" name="word" id="word" placeholder="ご意見"></textarea>
+            </div>
+            <input class="form-button" type="submit" value="送信">
+        </div>
+
     </section>
     <section id="news"></section>
+
     <script src="script.js" defer></script>
 </body>
 
