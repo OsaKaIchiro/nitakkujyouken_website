@@ -32,4 +32,35 @@
   margin-top: 1px;
   width: 170px;
   height: 170px;
+}
+
+#sections .carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+#sections .carousel-item {
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 350px;
+  height: 500px;
+  background-color: yellow;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#form h1 {
+  font-size: 24px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
