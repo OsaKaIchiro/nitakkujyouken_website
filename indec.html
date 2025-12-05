@@ -9,28 +9,117 @@
 <body>
     <section id="achievements">
 
+        <h2 class="taitoru">実績</h2>
+        <hr class="grborder">
         <p class="explain">アイコンをクリックして表示</p>
         <div class="container">
-            <div class="item">
-                <img src="" class="itemimg">
-                ゲーム班
-            </div>
-            <div class="item">
-                <img src="" class="itemimg">
-                WEB班</div>
-            <div class="item">
+           <!--game-->
+            <div class="item"><button class="btn-game btnpopup"  onclick="document.getElementById('game-dialog').showModal()"> 
+                    <img src="" class="itemimg">
+                    ゲーム班
+
+            </button></div>
+            
+            <!--web-->    
+            <div class="item"><button class="btn-web btnpopup" onclick="document.getElementById('web-dialog').showModal()">
+                    <img src="" class="itemimg">
+                    WEB班</button></div>
+            
+            <!--kyopro-->
+            <div class="item"><button class="btn-kyopro btnpopup" onclick="document.getElementById('kyopro-dialog').showModal()">
                 <img src="" class="itemimg">
                 競技
                 <br>
                 プログラミング班
-            </div>
-            <div class="item">
+            </button></div>
+
+            <!--DTM-->
+           <div class="item"> <button class="btn-DTM btn popup" onclick="document.getElementById('DTM-dialog').showModal()">
                 <img src="" class="itemimg">
-                DTM班</div>
-            <div class="item">
+                DTM班</button></div>
+
+            <!--AI-->
+            <div class="item"><button class="btn-AI btn popup" onclick="document.getElementById('AI-dialog').showModal()">
                 <img src="" class="itemimg">
                 AI班</div>
-        </div>
+            </button></div>
+
+        <!--ゲーム班の説明ポップアップ-->
+        <dialog id="game-dialog">
+                    <p></p>
+                    <form method="dialog">
+                        <p>ゲーム班の実績です。</p>
+                        <p>・aaaa</p>
+                        <p>・aaaa</p>
+                        <div class="close">
+                            <button class="btn">閉じる</button>
+                        </div>
+                    </form>
+        </dialog>
+
+        <!--WEB班用-->
+        <dialog id="web-dialog">
+                    <p></p>
+                    <form method="dialog">
+                        <p>WEB班の実績です。</p>
+                        <p>・いいい</p>
+                        <p>・いいい</p>
+                        <div class="close">
+                            <button class="btn">閉じる</button>
+                        </div>
+                    </form>
+        </dialog>
+
+        <!--競技プログラミング班用-->
+        <dialog id="kyopro-dialog">
+            <p></p>
+            <form method="dialog">
+                <p>競技プログラミング班の実績です。</p>
+                <p>・ううう</p>
+                <p>・ううう</p>
+                <div class="close">
+                    <button class="btn">閉じる</button>
+                </div>
+            </form>
+        </dialog>
+
+
+        <!--DTM班用-->
+        <dialog id="DTM-dialog">
+            <p></p>
+            <form method="dialog">
+            <p>DTM班の実績です。</p>
+            <p>・えええ</p>
+            <p>・えええ</p>
+            <div class="close">
+            </form>
+                <button class="btn">閉じる</button>
+            </div>
+        </dialog>
+
+        <!--AI班用-->
+        <dialog id="AI-dialog">
+        <p></p>
+        <form method="dialog">
+        <p>AI班の実績です。</p>
+        <p>・おおお</p>
+        <p>・おおお</p>
+        <div class="close">
+        </form>
+            <button class="btn">閉じる</button>
+            </div>
+
+        </dialog>
+
+
+
+
+        
+
+   
+
+        
+        
         
         
     </section>
