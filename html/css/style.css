@@ -1,0 +1,23 @@
+header {
+  padding: 0 10px;
+  color: #B7C7C0;
+  background-color: #15734C;
+  display: flex;
+}
+header .header-section {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px 10px auto;
+}
+header .header-section .header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+header .header-section .header h2 {
+  font-size: 10px;
+}
+header .header-section .header img {
+  margin: 0 10px 0 10px;
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */

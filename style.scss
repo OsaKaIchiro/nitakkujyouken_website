@@ -1,0 +1,33 @@
+header{
+    padding: 0 10px;
+    color: #B7C7C0;
+    background-color: #15734C;
+    display: flex;
+
+    h2{
+        
+    }
+
+    .header-section{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 10px 10px auto;
+        .header{
+       
+        align-items: center;
+        
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 10px;
+        }
+
+        img{
+            margin: 0 10px 0 10px;
+            width: 50%;
+        }
+    }
+    
+    
+    }
+}
