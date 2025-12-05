@@ -38,6 +38,18 @@ header{
     
     
     }
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+hr {
+    border: none;
+    border-top: 6px dashed #13703d;
+    margin: 20px 0;
+}
+
 
 #achievements {
     .explain {
@@ -147,7 +159,6 @@ header{
 #form {
     .form-title {
         text-align: center;
-        font-size: 25px;
         margin: 0 auto;
         width: 80%;
     }
@@ -157,13 +168,11 @@ header{
         flex-direction: column;
         margin: 0 auto;
         width: 80%;
-        height: 800px;
         font-size: 30px;
     }
 
     .form-name {
-
-        margin-top: 5px
+        margin-top: 5px;
     }
 
     label {
@@ -220,9 +229,31 @@ header{
 
 }
 
-#news {}
+#news {
+    .news-title {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container {
+
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .news-item {
+        background-color: #dcdcdc;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    margin-bottom:50px;
 
 hr {
     border: none;
     border-top: 6px dashed #13703d;
     margin: 20px 0;
+}
