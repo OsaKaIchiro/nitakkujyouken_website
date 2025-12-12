@@ -1,3 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 0 10px;
+    color: #B7C7C0;
+    background-color: #15734C;
+    display: flex;
+}
+
+    h2{
+        
+    }
+
+    .header-section{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px 10px 10px auto;
+        .header{
+       
+        align-items: center;
+        
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 10px;
+        }
+
+        img{
+            margin: 0 10px 0 10px;
+            width: 50%;
+        }
+    }
+    
+    
+    }
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+hr {
+    border: none;
+    border-top: 6px dashed #13703d;
+    margin: 20px 0;
+}
+
+
 #achievements{
     .taitoru{
         text-align: center;
@@ -7,9 +60,9 @@
         border: dashed;
     }
     .explain{
-        text-align: center;
     }
-    .container{
+
+    .container {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -21,7 +74,8 @@
 
 
     }
-    .item{
+
+    .item {
         background-color: rgb(118, 216, 211);
         text-align: center;
         border-radius: 10%;
@@ -34,13 +88,16 @@
     .item:nth-child(1){
         margin-left: 30px;
     }
-    .item:nth-child(4){
+
+    .item:nth-child(4) {
         margin-left: 130px;
     }
-    .item:nth-child(5){
+
+    .item:nth-child(5) {
         margin-left: 40px;
     }
-    .itemimg{
+
+    .itemimg {
         border-radius: 10%;
         background-color: black;
         margin-top: 1px;
@@ -92,34 +149,39 @@
 }
 
 
-#sections{
-    .carousel{
+#sections {
+    .carousel {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         scroll-snap-stop: always;
+
         //ボタン
         &::scroll-button(left) {
-        content: "◀" / "Scroll Left";
-        justify-self: end;
-        margin-left: 30%;
-        width: 50px;height: 50px;
-        border: none;
-        border-radius: 100%;
-        padding-top: 10px;
-    }
+            content: "◀" / "Scroll Left";
+            justify-self: end;
+            margin-left: 30%;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 100%;
+            padding-top: 10px;
+        }
+
         &::scroll-button(right) {
-        content: "▶" / "Scroll Right";
-        margin-left: 55%;
-        width: 50px;height: 50px;
-        border: none;
-        border-radius: 100%;
-        padding-top: 10px;
+            content: "▶" / "Scroll Right";
+            margin-left: 55%;
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 100%;
+            padding-top: 10px;
+        }
+
     }
-        
-    }
-    .carousel-item{
+
+    .carousel-item {
         scroll-snap-align: start;
         display: flex;
         align-items: center;
@@ -133,29 +195,115 @@
         margin-right: 10px;
         scroll-snap-align: center;
     }
+
     .carousel::-webkit-scrollbar {
-    display: none;
+        display: none;
     }
 }
-#header{
 
-}
-#news{
-    
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#form {
-    h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-}
+#header {}
 
 #news {}
 
 
+#form {
+    .form-title {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .form-name {
+        margin-top: 5px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+
+    .form-input {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 80%;
+    }
+
+    input[type="submit"] {
+        font-size: 80%;
+    }
+
+    input[type="text"] {
+        font-size: 80%;
+    }
+
+    textarea[type="text"] {
+        font-size: 80%;
+    }
+
+    textarea {
+        display: block;
+        margin: 5px auto;
+        width: 80%;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        resize: vertical;
+    }
+
+    .form-button {
+        display: inline-block;
+        margin: 20px;
+        width: 20%;
+        height: 60px;
+        border-radius: 20px;
+        border: none;
+        background-color: #13703d;
+        color: white;
+        cursor: pointer;
+    }
+
+}
+
+#news {
+    .news-title {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container {
+
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .news-item {
+        background-color: #dcdcdc;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    margin-bottom:50px;
+
+hr {
+    border: none;
+    border-top: 6px dashed #13703d;
+    margin: 20px 0;
+}

@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="html/css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="html/css/style.css">
 </head>
-
 <body>
-
+    <header>
+        <h2>情報工学研究部</h2>
+        <div class="header-section">
+            <div class="header">
+            <img src="img/material-symbols-light_home-rounded.png" alt="home">
+            <h2>ホーム</h2>
+        </div>
+         <div class="header">
+            <img src="img/ant-design_product-filled.png" alt="production">
+            <h2>制作物</h2>
+        </div>
+         <div class="header">
+            <img src="img/tdesign_member-filled.png" alt="member">
+            <h2>各班</h2>
+        </div>
+         <div class="header">
+            <img src="img/material-symbols_trophy.png" alt="trophy">
+            <h2>実績</h2>
+        </div>
+        <div class="header">
+            <img src="img/iconamoon_comment-fill.png" alt="form">
+            <h2>お問い合わせ</h2>
+        </div>
+        </div>
+        
+    </header>
+    <section id="header">
+        <h1>
+            Information
+        </h1>
+        <h1>
+            Engineering
+        </h1>
+        <h1>
+           Research
+        </h1>
+        <h1>
+           Department
+        </h1>
+        <h1>
+            情報工学研究部
+        </h1>
+    </section>
     <section id="sections">
         <div class="carousel">
             <div class="carousel-item item1">ゲーム班</div>
@@ -20,9 +60,53 @@
         </div>
     </section>
     <section id="form">
-        <h1>フォーム</h1>
+        <div class="form-title">
+            <h1>フォーム</h1>
+            <hr>
+        </div>
+
+        <div class="form-content">
+            <div class="form-name">
+                <label for="name">名前</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="名前">
+            </div>
+            <div class="form-email">
+                <label for="email">メールアドレス</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="メールアドレス">
+            </div>
+            <div class="form-opinion">
+                <label for="word">ご意見</label>
+                <textarea type="text" name="word" id="word" placeholder="ご意見"></textarea>
+            </div>
+            <input class="form-button" type="submit" value="送信">
+        </div>
+
     </section>
-    <section id="news"></section>
+    <section id="news">
+        <div class="news-title">
+            <h1>最新情報</h1>
+            <hr>
+        </div>
+
+        <div class="container">
+            <div class="news-item">
+                <h2 class="news-item-title">ニュースタイトル1</h2>
+                <p class="news-item-date">2024-06-01</p>
+                <p class="news-item-content">これはニュースの内容です。最新情報をお知らせします。</p>
+            </div>
+            <div class="news-item">
+                <h2 class="news-item-title">ニュースタイトル1</h2>
+                <p class="news-item-date">2024-06-01</p>
+                <p class="news-item-content">これはニュースの内容です。最新情報をお知らせします。</p>
+            </div>
+            <div class="news-item">
+                <h2 class="news-item-title">ニュースタイトル1</h2>
+                <p class="news-item-date">2024-06-01</p>
+                <p class="news-item-content">これはニュースの内容です。最新情報をお知らせします。</p>
+            </div>
+    </section>
+
+
     <script src="script.js" defer></script>
 </body>
 
